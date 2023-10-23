@@ -78,6 +78,12 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Arial', sans-serif;
+    src: url("../fonts/ArialMT.woff") format('woff');
+    src: url("../fonts/ArialMT.woff2") format('woff2');
+}
+
 .container {
     max-width: 1240px;
     padding: 0;
@@ -287,3 +293,105 @@ body {
     border-radius: 20px;
     overflow: hidden;
 }
+
+.footer {
+    background-color: #25262B;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-45px);
+    z-index: -2;
+}
+
+.footer__title {
+    margin: 145px 0 100px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+    line-height: normal;
+}
+
+.footer__social-title {
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+    line-height: normal;
+}
+
+.footer__social-items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.footer__social-item {
+    position: relative;
+    max-width: 391px;
+    max-height: 226px;
+    width: 100vh;
+    height: 100vh;
+    background-color: #FFF;
+    border-radius: 20px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer__logo-links {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer__logo {
+    padding-bottom: 17px;
+    padding-right: 23px;
+}
+
+.footer__menu {
+    padding-top: 100px;
+    margin-bottom: 230px;
+}
+
+.footer__menu::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    background-color: #808080;
+    margin: -120px auto;
+}
+
+.footer__menu-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__menu-item, .footer__menu-link {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    line-height: normal;
+}
+
+.footer__menu-item span{
+    margin-right: 35px;
+}
+
+.footer__menu-link {
+    margin-left: 40px;
+}
+
+
+
+
