@@ -12,29 +12,29 @@
 <header class="header">
     <div class="header__top">
         <div class="container">
-            <div class="header__top-inner">
-                <a class="logo" href="#">
+            <div class="header__top-inner" id="main">
+                <a class="logo" href="#" >
                     <img class="logo__img" src="./img/logo.svg" alt="Логотип"/>
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Главная</a>
+                            <a class="menu__list-link" href="#main">Главная</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Для судовладельцев</a>
+                            <a class="menu__list-link" href="#owners">Для судовладельцев</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Для моряков</a>
+                            <a class="menu__list-link" href="#sailors">Для моряков</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Для сотрудников и партнеров</a>
+                            <a class="menu__list-link" href="#partners">Для сотрудников и партнеров</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">О нас</a>
+                            <a class="menu__list-link" href="#about">О нас</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#"><span>Контакты</span></a>
+                            <a class="menu__list-link" href="#contacts"><span>Контакты</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -59,7 +59,7 @@
             <span>позволяют получить:</span>
         </div>
         <div class="offer__items">
-            <div class="offer__item">
+            <div class="offer__item section" id="owners">
                 <div class="offer__item-text">
                     <h2 class="offer__item-header">Судовладельцам</h2>
                     <p class="item__text">Лучших на рынке квалифицированных, здоровых специалистов, работа которых
@@ -75,7 +75,7 @@
                     <img src="./img/owners-bg.jpg" alt="Судно">
                 </div>
             </div>
-            <div class="offer__item-sailors">
+            <div class="offer__item-sailors" id="sailors">
                 <div class="offer__item-image">
                     <img src="./img/sailors-bg.jpg" alt="Капитан">
                 </div>
@@ -93,7 +93,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" id="partners">
                 <div class="offer__item-text">
                     <h2 class="offer__item-header">Сотрудникам
                         и партнёрам</h2>
@@ -107,9 +107,9 @@
         </div>
     </div>
 </section>
-<section class="about">
+<section class="about" >
     <div class="container">
-        <p class="about__text-first">Компания Odessa Crewing Agency даёт обществу счастливых обеспеченных граждан,
+        <p class="about__text-first" id="about">Компания Odessa Crewing Agency даёт обществу счастливых обеспеченных граждан,
             которые
             помогают развитию экономики Украины</p>
         <p class="about__text-second">Переступив порог компании O.C.A <br>
@@ -117,24 +117,37 @@
         </p>
         <div class="about__license">
             <div class="about__license-image">
-                <img src="./img/License-1.jpg" alt="Лицензия 1">
+                <a class="pdf-link" href="./img/license-1.pdf">
+                    <img src="./img/license-1.jpg" alt="Лицензия 1">
+                </a>
             </div>
             <div class="about__license-image">
-                <img src="./img/License-2.jpg" alt="Лицензия 2">
+                <a class="pdf-link" href="./img/license-2.pdf">
+                    <img src="./img/license-2.jpg" alt="Лицензия 2">
+                </a>
             </div>
             <div class="about__license-image">
-                <img src="./img/License-3.jpg" alt="Лицензия 3">
+                <a class="pdf-link" href="./img/license-3.pdf">
+                    <img src="./img/license-3.jpg" alt="Лицензия 3">
+                </a>
             </div>
             <div class="about__license-image">
-                <img src="img/Attestation.jpg" alt="Аттестация">
+                <a class="pdf-link" href="./img/Attestation.jpg">
+                    <img src="./img/attestation.jpg" alt="Аттестация">
+                </a>
+            </div>
+            <div class="pdf-modal" id="pdf-modal">
+                <div class="pdf-modal-content" id="pdf-modal-content">
+                    <iframe id="pdf-iframe" width="800" height="600"></iframe>
+                    <button id="close-pdf-modal">Закрыть</button>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
 <footer class="footer">
     <div class="container">
-        <h3 class="footer__title">Связь с нами</h3>
+        <h3 class="footer__title" id="contacts">Связь с нами</h3>
         <div class="footer__social-items">
             <div class="footer__social-item">
                 <h5 class="footer__social-title">По документам</h5>
@@ -180,27 +193,27 @@
             </div>
         </div>
         <div class="footer__menu">
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><span>Odessa Crewing Agency  2014 - 2023</span></li>
-                    <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#">Главная</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#">Для судовладельцев</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#">Для моряков</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#">Для сотрудников и партнеров</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a class="footer__menu-link" href="#">О нас</a>
-                    </li>
-                </ul>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><span>Odessa Crewing Agency  2014 - 2023</span></li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#main">Главная</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#owners">Для судовладельцев</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#sailors">Для моряков</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#partners">Для сотрудников и партнеров</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#about">О нас</a>
+                </li>
+            </ul>
         </div>
     </div>
 </footer>
-
+<script src="./js/script.js"></script>
 </body>
 </html>
